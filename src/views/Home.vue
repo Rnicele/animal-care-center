@@ -71,143 +71,59 @@
           <p class="subtitle">MY CALENDAR</p>
           <button class="btn btn-see-all">SEE ALL</button>
         </div>
+        <div class="card-banner sub-shadow d-flex mb-15">
+          <div class="cal-date">
+            <h4>25</h4>
+            <p>APR</p>
+          </div>
+          <div class="calendar-info">
+            <p class="title">Seminar</p>
+            <p class="message">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div class="card-banner sub-shadow d-flex mb-15">
+          <div class="cal-date">
+            <h4>12</h4>
+            <p>MAY</p>
+          </div>
+          <div class="calendar-info">
+            <p class="title">Seminar</p>
+            <p class="message">Zoom Meeting</p>
+          </div>
+        </div>
+        <div class="card-banner sub-shadow d-flex mb-15">
+          <div class="cal-date">
+            <h4>20</h4>
+            <p>JUN</p>
+          </div>
+          <div class="calendar-info">
+            <p class="title">Anti-rabies Vaccine</p>
+            <p class="message">for BRGY Sikatuna</p>
+          </div>
+        </div>
+        <div class="card-banner sub-shadow d-flex mb-15">
+          <div class="cal-date">
+            <h4>20</h4>
+            <p>JUN</p>
+          </div>
+          <div class="calendar-info">
+            <p class="title">Anti-rabies Vaccine</p>
+            <p class="message">for BRGY Sikatuna</p>
+          </div>
+        </div>
+        <div class="card-banner sub-shadow d-flex mb-15">
+          <div class="cal-date">
+            <h4>20</h4>
+            <p>JUN</p>
+          </div>
+          <div class="calendar-info">
+            <p class="title">Anti-rabies Vaccine</p>
+            <p class="message">for BRGY Sikatuna</p>
+          </div>
+        </div>
       </div>
     </div>
   </main>
 </template>
-
-<style>
-.banner {
-  display: flex;
-  padding: 20px;
-  border-radius: 20px;
-  margin-bottom: 30px;
-
-  .welcome-text {
-    margin: auto;
-    margin-left: 0;
-  }
-
-  .welcome-img {
-    margin: -1.25rem 0;
-
-    img {
-      width: 300px;
-    }
-  }
-}
-
-.cards {
-  display: flex;
-  margin: auto;
-
-  .card {
-    padding: 20px;
-    border-radius: 20px;
-    border: none;
-    width: 100%;
-
-    p.subtitle,
-    .btn-see-all {
-      font-size: 14px;
-      font-weight: 600;
-      color: #a6a6a6;
-      margin-bottom: 0.5rem;
-    }
-
-    .btn-see-all {
-      padding: 0;
-    }
-
-    h2.number {
-      font-size: 32px;
-      font-weight: 600;
-      color: black;
-      margin: 0;
-    }
-
-    h4.subject {
-      font-size: 16px;
-      font-weight: 600;
-      color: black;
-      margin: 0;
-    }
-
-    p.badge {
-      font-size: 14px;
-      font-weight: 600;
-      padding: 5px 10px;
-      border-radius: 8px;
-      width: fit-content;
-      margin-top: 10px;
-      margin-bottom: 0;
-
-      &.badge-error {
-        color: #ff6060;
-        background: #ffd0d0;
-      }
-
-      &.badge-success {
-        color: #4cbc6b;
-        background: #cef2d8;
-      }
-    }
-
-    .sub-header {
-      display: flex;
-      margin-bottom: 0.5rem;
-
-      .subtitle,
-      .btn-see-all {
-        margin: auto;
-      }
-
-      .subtitle {
-        margin-left: 0;
-      }
-
-      .btn-see-all {
-        margin-right: 0;
-      }
-    }
-
-    .card-banner {
-      padding: 15px;
-      border-radius: 15px;
-
-      .card-img {
-        width: 50px;
-        height: 50px;
-        border-radius: 50px;
-        border: 0.5px solid rgba(149, 31, 80, 0.5);
-        margin-right: 15px;
-      }
-
-      .annoucement-info {
-        .title {
-          font-size: 14px;
-          font-weight: 600;
-          margin: 0;
-        }
-
-        .message {
-          font-size: 12px;
-          margin: 0;
-        }
-      }
-    }
-  }
-
-  .mr-card {
-    margin-right: 20px;
-  }
-
-  &.mb-30 {
-    margin-bottom: 30px;
-  }
-
-  .mb-15 {
-    margin-bottom: 15px;
-  }
-}
-</style>

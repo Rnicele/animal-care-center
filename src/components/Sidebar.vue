@@ -81,6 +81,7 @@ const ToggleMenu = () => {
   is_expanded.value = !is_expanded.value;
 
   if (is_expanded.value == true) {
+    document.getElementsByClassName("home-page")[0].classList.add("expanded");
     setTimeout(function () {
       document.getElementsByClassName("logo-text")[0].style.opacity = 1;
       document.getElementsByClassName("logo-text")[0].style.display =
@@ -89,6 +90,9 @@ const ToggleMenu = () => {
         "ease-in";
     }, 230);
   } else {
+    document
+      .getElementsByClassName("home-page")[0]
+      .classList.remove("expanded");
     document.getElementsByClassName("logo-text")[0].style.opacity = 0;
     document.getElementsByClassName("logo-text")[0].style.display = "none";
   }

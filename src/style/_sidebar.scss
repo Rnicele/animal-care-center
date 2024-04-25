@@ -6,7 +6,14 @@ aside {
   overflow: hidden;
   padding: 1rem;
 
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
   transition: 0.2s ease-out;
+
+  z-index: 99;
 
   .logo {
     margin-bottom: 1rem;
