@@ -22,17 +22,21 @@
         <span class="icon-button"><i class="bi bi-house"></i></span>
         <span class="text">Home</span>
       </router-link>
-      <router-link class="button" to="/about">
+      <router-link class="button" to="/daily-task">
+        <span class="icon-button"><i class="bi bi-list-task"></i></span>
+        <span class="text">Task</span>
+      </router-link>
+      <router-link class="button" to="/new-patient">
         <span class="icon-button"><i class="bi bi-file-earmark-text"></i></span>
-        <span class="text">About</span>
+        <span class="text">New Patient</span>
       </router-link>
-      <router-link class="button" to="/team">
-        <span class="icon-button"><i class="bi bi-people"></i></span>
-        <span class="text">Team</span>
+      <router-link class="button" to="/annoucements">
+        <span class="icon-button"><i class="bi bi-megaphone"></i></span>
+        <span class="text">Announcements</span>
       </router-link>
-      <router-link class="button" to="/contact">
-        <span class="icon-button"><i class="bi bi-envelope"></i></span>
-        <span class="text">Contact</span>
+      <router-link class="button" to="/calendar">
+        <span class="icon-button"><i class="bi bi-calendar4-week"></i></span>
+        <span class="text">My Calendar</span>
       </router-link>
     </div>
 
@@ -74,14 +78,14 @@
 
 <script setup>
 import { ref } from "vue";
-
 const is_expanded = ref(false);
 
 const ToggleMenu = () => {
   is_expanded.value = !is_expanded.value;
 
   if (is_expanded.value == true) {
-    document.getElementsByClassName("home-page")[0].classList.add("expanded");
+    document.getElementsByClassName("main-page")[0].classList.add("expanded");
+
     setTimeout(function () {
       document.getElementsByClassName("logo-text")[0].style.opacity = 1;
       document.getElementsByClassName("logo-text")[0].style.display =
@@ -91,8 +95,9 @@ const ToggleMenu = () => {
     }, 230);
   } else {
     document
-      .getElementsByClassName("home-page")[0]
+      .getElementsByClassName("main-page")[0]
       .classList.remove("expanded");
+
     document.getElementsByClassName("logo-text")[0].style.opacity = 0;
     document.getElementsByClassName("logo-text")[0].style.display = "none";
   }

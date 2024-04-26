@@ -82,6 +82,16 @@
         border-radius: 50px;
         border: 0.5px solid rgba(149, 31, 80, 0.5);
         margin-right: 15px;
+
+        i {
+          font-size: 25px;
+          padding: 10px;
+          color: #a83d6a;
+
+          &::before {
+            margin-top: 10px;
+          }
+        }
       }
 
       .annoucement-info {

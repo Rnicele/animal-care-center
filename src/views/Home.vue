@@ -1,12 +1,18 @@
 <template>
-  <main class="home-page">
+  <main class="main-page home-page">
     <div class="banner bg-dark-pink app-shadow">
       <div class="welcome-text">
-        <h2>Good Day, Dr. Albert!</h2>
-        <p>Today is April 25, 2024, 11:22 pm. Have a nice day!</p>
+        <h2>Good Day, Dr. {{ doctorOne.name }}</h2>
+        <p>
+          Today is {{ moment(new Date()).format("MMM D, YYYY, HH:mm") }}. Have a
+          nice day!
+        </p>
       </div>
-      <div class="welcome-img">
+      <div class="welcome-img" v-if="doctorOne.gender == 'M'">
         <img src="/img/vet_male_doctor.png" alt="male vet doctor" />
+      </div>
+      <div class="welcome-img" v-else="doctorOne.gender == 'F'">
+        <img src="/img/vet_female_doctor.png" alt="male vet doctor" />
       </div>
     </div>
     <div class="cards mb-30">
@@ -35,34 +41,22 @@
           <p class="subtitle">ANNOUNCEMENTS</p>
           <button class="btn btn-see-all">SEE ALL</button>
         </div>
-        <div class="card-banner sub-shadow d-flex mb-15">
-          <img src="/img/cat_icon.png" alt="Cat icon" class="card-img" />
-          <div class="annoucement-info">
-            <p class="title">Be Our Voice.</p>
-            <p class="message">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              tincidunt dui est, non sollicitudin neque semper sit amet.
-            </p>
-          </div>
-        </div>
-        <div class="card-banner sub-shadow d-flex mb-15">
-          <img src="/img/cat_icon.png" alt="Cat icon" class="card-img" />
-          <div class="annoucement-info">
-            <p class="title">Be Our Voice.</p>
-            <p class="message">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              tincidunt dui est, non sollicitudin neque semper sit amet.
-            </p>
-          </div>
-        </div>
-        <div class="card-banner sub-shadow d-flex">
-          <img src="/img/cat_icon.png" alt="Cat icon" class="card-img" />
-          <div class="annoucement-info">
-            <p class="title">Be Our Voice.</p>
-            <p class="message">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              tincidunt dui est, non sollicitudin neque semper sit amet.
-            </p>
+        <div v-for="annoucement in Announcements.slice(0, 3)">
+          <div
+            class="card-banner sub-shadow d-flex mb-15"
+            v-if="
+              annoucement.type == doctorOne.type || annoucement.type == 'all'
+            "
+          >
+            <span class="icon-button card-img"
+              ><i :class="`bi ` + annoucement.icon"></i
+            ></span>
+            <div class="annoucement-info">
+              <p class="title">{{ annoucement.title }}</p>
+              <p class="message">
+                {{ annoucement.message }}
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -71,59 +65,38 @@
           <p class="subtitle">MY CALENDAR</p>
           <button class="btn btn-see-all">SEE ALL</button>
         </div>
-        <div class="card-banner sub-shadow d-flex mb-15">
-          <div class="cal-date">
-            <h4>25</h4>
-            <p>APR</p>
-          </div>
-          <div class="calendar-info">
-            <p class="title">Seminar</p>
-            <p class="message">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-          </div>
-        </div>
-        <div class="card-banner sub-shadow d-flex mb-15">
-          <div class="cal-date">
-            <h4>12</h4>
-            <p>MAY</p>
-          </div>
-          <div class="calendar-info">
-            <p class="title">Seminar</p>
-            <p class="message">Zoom Meeting</p>
-          </div>
-        </div>
-        <div class="card-banner sub-shadow d-flex mb-15">
-          <div class="cal-date">
-            <h4>20</h4>
-            <p>JUN</p>
-          </div>
-          <div class="calendar-info">
-            <p class="title">Anti-rabies Vaccine</p>
-            <p class="message">for BRGY Sikatuna</p>
-          </div>
-        </div>
-        <div class="card-banner sub-shadow d-flex mb-15">
-          <div class="cal-date">
-            <h4>20</h4>
-            <p>JUN</p>
-          </div>
-          <div class="calendar-info">
-            <p class="title">Anti-rabies Vaccine</p>
-            <p class="message">for BRGY Sikatuna</p>
-          </div>
-        </div>
-        <div class="card-banner sub-shadow d-flex mb-15">
-          <div class="cal-date">
-            <h4>20</h4>
-            <p>JUN</p>
-          </div>
-          <div class="calendar-info">
-            <p class="title">Anti-rabies Vaccine</p>
-            <p class="message">for BRGY Sikatuna</p>
+        <div v-for="cal in Calendar.slice(0, 3)">
+          <div
+            class="card-banner sub-shadow d-flex mb-15"
+            v-if="cal.d_id == doctorOne.id"
+          >
+            <div class="cal-date">
+              <h4>25</h4>
+              <p>APR</p>
+            </div>
+            <div class="calendar-info">
+              <p class="title">{{ cal.title }}</p>
+              <p class="message">
+                {{ cal.time }} <br />
+                {{ cal.about }}
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </main>
 </template>
+
+<script setup>
+import Announcements from "../assets/json/announcements.json";
+import Accounts from "../assets/json/accounts.json";
+import Calendar from "../assets/json/calendar.json";
+import moment from "moment";
+
+// sample
+const doctorOne = Accounts[0];
+
+console.log();
+//const moment = require("moment");
+</script>

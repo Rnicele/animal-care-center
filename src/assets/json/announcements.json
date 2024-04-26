@@ -1,0 +1,92 @@
+[
+  {
+    "aid": "1",
+    "title": "Monthly Townhall Meeting",
+    "level": "important",
+    "type": "all",
+    "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque magna nisl, dapibus eu nunc non, tempus laoreet sem. Nam nec felis dictum, faucibus quam et, consequat ipsum. Aenean quis elit vel urna porttitor consectetur. Mauris tempus quam in dui fermentum, ac suscipit metus faucibus. Maecenas quis leo et orci gravida ultricies.",
+    "img": "",
+    "icon": "bi-person-workspace"
+  },
+  {
+    "aid": "2",
+    "title": "Let's fight Parvo! A seminar for Vet doctors",
+    "level": "urgent",
+    "type": "dr",
+    "message": "Morbi imperdiet dui ut auctor laoreet. Suspendisse potenti. Donec nisi ipsum, tempus sit amet dignissim id, vehicula eget tortor. Aliquam tincidunt lectus velit, quis finibus justo semper a. Etiam a libero cursus, pulvinar nibh quis, pretium sem. Duis suscipit eros finibus, tempor felis in, porttitor justo. Etiam sed elementum augue, ut mattis augue.",
+    "img": "",
+    "icon": "bi-megaphone-fill"
+  },
+  {
+    "aid": "3",
+    "title": "Furry Friends Fair: A Celebration of Animals",
+    "level": "normal",
+    "type": "all",
+    "message": "Join us for a day of delight and discovery at the Furry Friends Fair! Whether you're a devoted pet owner, an animal enthusiast, or simply curious about our fellow inhabitants on this planet, this event is tailor-made for you.",
+    "img": "",
+    "icon": "bi-megaphone-fill"
+  },
+  {
+    "aid": "4",
+    "title": "Register now: Yearly Fundraising Project",
+    "level": "important",
+    "type": "all",
+    "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet lectus erat. Etiam vel aliquet nisl. Maecenas congue dui sed pulvinar maximus. Maecenas ut diam semper, blandit justo a, suscipit orci. Curabitur risus eros, interdum vitae erat eget, gravida fringilla sem.",
+    "img": "",
+    "icon": "bi-megaphone-fill"
+  },
+  {
+    "aid": "5",
+    "title": "Hiring: Nurses",
+    "level": "normal",
+    "type": "all",
+    "message": "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque ornare nibh quam, ac viverra risus bibendum eget. Proin posuere leo eget ligula egestas placerat. Donec lobortis nulla at scelerisque condimentum. Proin imperdiet bibendum arcu, vitae viverra eros feugiat sed. Nullam ligula justo, scelerisque quis ultrices vitae, imperdiet congue diam. Integer vitae quam ultricies ipsum egestas dignissim eget ac eros. Pellentesque sed augue leo. Cras in mi et augue finibus pulvinar eu sed nisl. Pellentesque semper porta eros a aliquam. Nullam augue lacus, porta ac augue a, faucibus sollicitudin enim. Cras dictum aliquam accumsan.",
+    "img": "",
+    "icon": "bi-people-fill"
+  },
+  {
+    "aid": "6",
+    "title": "Training: How to be a good vet nurse",
+    "level": "normal",
+    "type": "nurses",
+    "message": "Suspendisse pretium viverra lectus nec vulputate. Donec euismod vitae ipsum ac aliquet. In volutpat fermentum magna, ac elementum ex tristique quis. Donec pulvinar blandit venenatis.",
+    "img": "",
+    "icon": "bi-people-fill"
+  },
+  {
+    "aid": "7",
+    "title": "Register: Scholarship Program",
+    "level": "urgent",
+    "type": "all",
+    "message": "Maecenas tristique tempus dui, et sodales augue porta ut. Aenean a erat ultrices, pellentesque arcu vel, dignissim justo. Praesent felis nibh, eleifend a justo non, efficitur dictum erat. Quisque lobortis ligula quis vestibulum dictum. Etiam sodales elementum libero quis suscipit.",
+    "img": "",
+    "icon": "bi-megaphone-fill"
+  },
+  {
+    "aid": "8",
+    "title": "Introducing Our Animal Companions Program!",
+    "level": "normal",
+    "type": "all",
+    "message": "e deeply value the well-being and happiness of all members, including our furry, feathery, and scaly friends. With the Animal Companions Program, we aim to celebrate the special bond between humans and animals while promoting their welfare and enriching our community life.",
+    "img": "",
+    "icon": "bi-megaphone-fill"
+  },
+  {
+    "aid": "9",
+    "title": "Calling All Pet Lovers: Join Our Dogs and Cats Awareness Campaign!",
+    "level": "normal",
+    "type": "all",
+    "message": "Dogs and cats hold a special place in our hearts, bringing us unconditional love, joy, and companionship. However, they also face various challenges, from overpopulation to neglect and mistreatment. Through our Dogs and Cats Awareness Campaign, we aim to raise awareness about these issues and inspire positive change in our community.",
+    "img": "",
+    "icon": "bi-megaphone-fill"
+  },
+  {
+    "aid": "10",
+    "title": "Rabies Awareness for Dogs and Cats",
+    "level": "important",
+    "type": "all",
+    "message": "Rabies is a deadly viral disease that poses a significant threat to both animals and humans. Dogs and cats are among the most common carriers of this virus, and it is essential to take proactive measures to protect them and our community.",
+    "img": "",
+    "icon": "bi-megaphone-fill"
+  }
+]

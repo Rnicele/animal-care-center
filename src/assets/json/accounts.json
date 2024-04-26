@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "name": "Kira Fowler",
+    "gender": "F",
+    "type": "dr"
+  },
+  {
+    "id": "2",
+    "name": "Crystal Leblanc",
+    "gender": "F",
+    "type": "dr"
+  },
+  {
+    "id": "3",
+    "name": "Edgar Gray",
+    "gender": "M",
+    "type": "dr"
+  },
+  {
+    "id": "4",
+    "name": "Marco Joseph",
+    "gender": "M",
+    "type": "dr"
+  },
+  {
+    "id": "5",
+    "name": "Frances Bryant",
+    "gender": "M",
+    "type": "dr"
+  },
+  {
+    "id": "6",
+    "name": "Mya Greer",
+    "gender": "F",
+    "type": "nurse"
+  },
+  {
+    "id": "7",
+    "name": "Cleo Archer",
+    "gender": "M",
+    "type": "nurse"
+  },
+  {
+    "id": "8",
+    "name": "Amanda Mcbride",
+    "gender": "F",
+    "type": "nurse"
+  },
+  {
+    "id": "9",
+    "name": "Jose Porter",
+    "gender": "M",
+    "type": "nurse"
+  },
+  {
+    "id": "10",
+    "name": "Elli May",
+    "gender": "F",
+    "type": "nurse"
+  },
+  {
+    "id": "11",
+    "name": "Annabelle Reynolds",
+    "gender": "F",
+    "type": "nurse"
+  },
+  {
+    "id": "12",
+    "name": "Emil Benjamin",
+    "gender": "M",
+    "type": "nurse"
+  },
+  {
+    "id": "13",
+    "name": "Michael Miranda",
+    "gender": "M",
+    "type": "nurse"
+  },
+  {
+    "id": "14",
+    "name": "Esme Daniels",
+    "gender": "F",
+    "type": "nurse"
+  },
+  {
+    "id": "15",
+    "name": "Luke Carver",
+    "gender": "M",
+    "type": "nurse"
+  }
+]

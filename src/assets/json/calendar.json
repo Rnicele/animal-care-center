@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "d_id": "1",
+    "title": "Enhancing Veterinary Practice: A Seminar for Veterinarians",
+    "about": "This seminar aims to provide a platform for veterinary professionals like you to expand your knowledge, sharpen your skills, and stay updated on the latest advancements in the field.",
+    "date": "05/10/2024",
+    "time": "2:30pm",
+    "where": "Zoom"
+  },
+  {
+    "id": "2",
+    "d_id": "1",
+    "title": "Veterinary Seminar: Advancements in Animal Healthcare",
+    "about": "designed to provide you with the latest insights, techniques, and advancements in the field of veterinary medicine.",
+    "date": "04/30/2024",
+    "time": "11:00am",
+    "where": "ACC Hall"
+  },
+  {
+    "id": "3",
+    "d_id": "2",
+    "title": "Veterinary Seminar: Advancements in Animal Healthcare",
+    "about": "designed to provide you with the latest insights, techniques, and advancements in the field of veterinary medicine.",
+    "date": "04/30/2024",
+    "time": "11:00am",
+    "where": "ACC Hall"
+  },
+  {
+    "id": "4",
+    "d_id": "2",
+    "title": "Advancements in Veterinary Medicine",
+    "about": "This seminar promises to be an enlightening and enriching event, bringing together experts in the field to share their insights and knowledge on the latest developments shaping veterinary practice.",
+    "date": "05/12/2024",
+    "time": "10:30am",
+    "where": "Zoom"
+  },
+  {
+    "id": "5",
+    "d_id": "3",
+    "title": "Enhancing Veterinary Practice: A Seminar for Veterinarians",
+    "about": "This seminar aims to provide a platform for veterinary professionals like you to expand your knowledge, sharpen your skills, and stay updated on the latest advancements in the field.",
+    "date": "05/10/2024",
+    "time": "2:30pm",
+    "where": "Zoom"
+  },
+  {
+    "id": "6",
+    "d_id": "3",
+    "title": "Bridging the Gap: Seminar for Veterinarians and Pet Owners",
+    "about": "designed to foster collaboration and understanding between veterinarians and pet owners for the betterment of animal health and welfare.",
+    "date": "06/01/2024",
+    "time": "3:00pm",
+    "where": "ACC Hall"
+  },
+  {
+    "id": "7",
+    "d_id": "4",
+    "title": "Advancements in Veterinary Medicine",
+    "about": "This seminar promises to be an enlightening and enriching event, bringing together experts in the field to share their insights and knowledge on the latest developments shaping veterinary practice.",
+    "date": "05/12/2024",
+    "time": "10:30am",
+    "where": "Zoom"
+  },
+  {
+    "id": "8",
+    "d_id": "4",
+    "title": "Bridging the Gap: Seminar for Veterinarians and Pet Owners",
+    "about": "designed to foster collaboration and understanding between veterinarians and pet owners for the betterment of animal health and welfare.",
+    "date": "06/01/2024",
+    "time": "3:00pm",
+    "where": "ACC Hall"
+  },
+  {
+    "id": "9",
+    "d_id": "5",
+    "title": "Veterinary Seminar: Advancements in Animal Healthcare",
+    "about": "designed to provide you with the latest insights, techniques, and advancements in the field of veterinary medicine.",
+    "date": "04/30/2024",
+    "time": "11:00am",
+    "where": "ACC Hall"
+  },
+  {
+    "id": "10",
+    "d_id": "5",
+    "title": "Bridging the Gap: Seminar for Veterinarians and Pet Owners",
+    "about": "designed to foster collaboration and understanding between veterinarians and pet owners for the betterment of animal health and welfare.",
+    "date": "06/01/2024",
+    "time": "3:00pm",
+    "where": "ACC Hall"
+  }
+]
