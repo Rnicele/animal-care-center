@@ -4,8 +4,8 @@
       <div class="welcome-text">
         <h2>Good Day, Dr. {{ doctorOne.name }}</h2>
         <p>
-          Today is {{ moment(new Date()).format("MMM D, YYYY, HH:mm") }}. Have a
-          nice day!
+          Today is {{ moment(new Date()).format("ddd, MMM D, YYYY h:mm A") }}.
+          Have a nice day!
         </p>
       </div>
       <div class="welcome-img" v-if="doctorOne.gender == 'M'">
@@ -18,19 +18,19 @@
     <div class="cards mb-30">
       <div class="card app-shadow mr-card">
         <p class="subtitle">OFFLINE</p>
-        <h2 class="number">25</h2>
+        <h2 class="number">{{ offline }}</h2>
         <h4 class="subject">SCHEDULED PATIENTS</h4>
         <p class="badge badge-error">-10% THAN AVERAGE</p>
       </div>
       <div class="card app-shadow mr-card">
         <p class="subtitle">ONLINE</p>
-        <h2 class="number">25</h2>
+        <h2 class="number">{{ online }}</h2>
         <h4 class="subject">ONLINE CONSULATION</h4>
         <p class="badge badge-success">+10% THAN AVERAGE</p>
       </div>
       <div class="card app-shadow">
         <p class="subtitle">EMERGENCY</p>
-        <h2 class="number">25</h2>
+        <h2 class="number">{{ emergency }}</h2>
         <h4 class="subject">EMERGENCY</h4>
         <p class="badge badge-success">+0% THAN AVERAGE</p>
       </div>
@@ -71,8 +71,14 @@
             v-if="cal.d_id == doctorOne.id"
           >
             <div class="cal-date">
-              <h4>25</h4>
-              <p>APR</p>
+              <h4>{{ new Date(cal.date_event).getDate() }}</h4>
+              <p>
+                {{
+                  new Date(cal.date_event).toLocaleString("en-us", {
+                    month: "short",
+                  })
+                }}
+              </p>
             </div>
             <div class="calendar-info">
               <p class="title">{{ cal.title }}</p>
@@ -92,11 +98,23 @@
 import Announcements from "../assets/json/announcements.json";
 import Accounts from "../assets/json/accounts.json";
 import Calendar from "../assets/json/calendar.json";
+import Patients from "../assets/json/patients.json";
 import moment from "moment";
 
 // sample
 const doctorOne = Accounts[0];
 
-console.log();
-//const moment = require("moment");
+let offline = 0;
+let online = 0;
+let emergency = 0;
+
+Patients.forEach((element) => {
+  if (element.type == 1) {
+    emergency += 1;
+  } else if (element.type == 2) {
+    offline += 1;
+  } else if (element.type == 3) {
+    online += 1;
+  }
+});
 </script>
